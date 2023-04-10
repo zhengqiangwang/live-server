@@ -1,0 +1,20 @@
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-MEDIA-SEQUENCE:2
+#EXT-X-TARGETDURATION:15
+#EXTINF:4.840, no desc
+sdf-2.ts
+#EXT-X-DISCONTINUITY
+#EXTINF:14.755, no desc
+sdf-3.ts
+#EXTINF:11.675, no desc
+sdf-4.ts
+#EXTINF:0.840, no desc
+sdf-5.ts
+#EXT-X-DISCONTINUITY
+#EXTINF:14.755, no desc
+sdf-6.ts
+#EXTINF:11.675, no desc
+sdf-7.ts
+#EXTINF:3.160, no desc
+sdf-8.ts

@@ -1,0 +1,12 @@
+prefix=/home/admin/sourcecode/srs/trunk/objs/Platform-SRS6-Linux-5.4.0-GCC9.4.0-x86_64/3rdpatry/srt
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: srt
+Description: SRT library set
+Version: 1.5.1
+Libs: -L${libdir} -lsrt   
+Libs.private:  -lpthread -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc
+Cflags: -I${includedir} -I${includedir}/srt
+Requires.private: openssl libcrypto

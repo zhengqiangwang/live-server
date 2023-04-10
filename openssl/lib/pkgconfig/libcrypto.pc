@@ -1,0 +1,12 @@
+prefix=/home/admin/sourcecode/srs/trunk/objs/Platform-SRS6-Linux-5.4.0-GCC9.4.0-x86_64/3rdpatry/openssl
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+enginesdir=${libdir}/engines-1.1
+
+Name: OpenSSL-libcrypto
+Description: OpenSSL cryptography library
+Version: 1.1.1l
+Libs: -L${libdir} -lcrypto
+Libs.private: -ldl 
+Cflags: -I${includedir}

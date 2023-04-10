@@ -1,0 +1,14 @@
+prefix=/home/admin/sourcecode/srs/trunk/objs/Platform-SRS6-Linux-5.4.0-GCC9.4.0-x86_64/3rdpatry/ffmpeg
+exec_prefix=${prefix}
+libdir=/home/admin/sourcecode/srs/trunk/objs/Platform-SRS6-Linux-5.4.0-GCC9.4.0-x86_64/3rdpatry/ffmpeg/lib
+includedir=/home/admin/sourcecode/srs/trunk/objs/Platform-SRS6-Linux-5.4.0-GCC9.4.0-x86_64/3rdpatry/ffmpeg/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 56.22.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -pthread -lm
+Libs.private: 
+Cflags: -I${includedir}

@@ -1,0 +1,11 @@
+prefix=/home/admin/sourcecode/srs/trunk/objs/Platform-SRS6-Linux-5.4.0-GCC9.4.0-x86_64/3rdpatry/srtp2
+exec_prefix=/home/admin/sourcecode/srs/trunk/objs/Platform-SRS6-Linux-5.4.0-GCC9.4.0-x86_64/3rdpatry/srtp2
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libsrtp2
+Version: 2.3.0
+Description: Library for SRTP (Secure Realtime Transport Protocol)
+
+Libs: -L${libdir} -lsrtp2 -L/home/admin/sourcecode/srs/trunk/objs/Platform-SRS6-Linux-5.4.0-GCC9.4.0-x86_64/3rdpatry/openssl/lib -lcrypto -ldl 
+Cflags: -I${includedir}

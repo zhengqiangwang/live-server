@@ -1,0 +1,14 @@
+prefix=/home/admin/sourcecode/srs/trunk/objs/Platform-SRS6-Linux-5.4.0-GCC9.4.0-x86_64/3rdpatry/ffmpeg
+exec_prefix=${prefix}
+libdir=/home/admin/sourcecode/srs/trunk/objs/Platform-SRS6-Linux-5.4.0-GCC9.4.0-x86_64/3rdpatry/ffmpeg/lib
+includedir=/home/admin/sourcecode/srs/trunk/objs/Platform-SRS6-Linux-5.4.0-GCC9.4.0-x86_64/3rdpatry/ffmpeg/include
+
+Name: libswresample
+Description: FFmpeg audio resampling library
+Version: 3.3.100
+Requires: libavutil >= 56.22.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lswresample -lm
+Libs.private: 
+Cflags: -I${includedir}
